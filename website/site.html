@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Scientific calculator</title>
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+
+</head>
+
+<body>
+    <div class="main_content">
+
+        <h1>A Scientific Calculator</h1>
+
+
+
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <td colspan="5">
+                        <input type="text" name="screen" value="" id="screen" />
+                        <input type="text" name="screen_out" value="0" id="screen_out" />
+                    </td>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><button class="fun_key" onclick="addChar(document.getElementById('screen') , '(' )">(</button></td>
+                    <td><button class="fun_key" onclick="addChar(document.getElementById('screen') , ')' )">)</button></td>
+
+
+                </tr>
+
+
+                <tr>
+                    <td><button class="fun_key" onclick="sin_inverse(document.getElementById('screen')  ,document.getElementById('screen_out')) ">sin <sup>-1</sup></button></td>
+                    <td><button class="fun_key" onclick="cos_inverse(document.getElementById('screen') ,document.getElementById('screen_out'))">cos <sup>-1</sup></button></td>
+                    <td><button class="fun_key" onclick="tan_inverse(document.getElementById('screen'),document.getElementById('screen_out'))">tan <sup>
+              -1</sup></button></td>
+                    <td><button class="fun_key" onclick="sin(document.getElementById('screen'),document.getElementById('screen_out'))">sin</button></td>
+                    <td><button class="fun_key" onclick="cos(document.getElementById('screen'),document.getElementById('screen_out'))">cos</button></td>
+
+
+                </tr>
+
+                <tr>
+                    <td><button class="fun_key" onclick="squar(document.getElementById('screen'),document.getElementById('screen_out'))">Sq</button></td>
+                    <td><button class="fun_key" onclick="squarerot(document.getElementById('screen'),document.getElementById('screen_out'))">&radic;x</button></td>
+                    <td><button class="fun_key" onclick="loga(document.getElementById('screen'),document.getElementById('screen_out'))">log <sub>10</sub></button></td>
+                    <td><button class="fun_key" onclick="logeu(document.getElementById('screen'),document.getElementById('screen_out'))">log <sub>e</sub></button></td>
+
+                    <td><button class="fun_key" onclick="tan(document.getElementById('screen'),document.getElementById('screen_out'))">tan</button></td>
+                </tr>
+
+                <tr>
+
+                    <td><button class="fun_key" onclick="factori(document.getElementById('screen'),document.getElementById('screen_out'))">n!</button></td>
+
+
+                    <td><button class="fun_key" onclick="increm(document.getElementById('screen'),document.getElementById('screen_out')) "> ^ </button></td>
+
+
+                    <td><button class="fun_key" onclick="exporais(document.getElementById('screen'),document.getElementById('screen_out'))"> e <sup>x</sup></button></td>
+                    <td><button class="fun_key" onclick="addChar(document.getElementById('screen'), '%' )">mod</button></td>
+                    <td><button class="fun_key" onclick="raiz10( document.getElementById('screen_out'),10 , document.getElementById('screen'))">10 <sup>x</sup></button></td>
+                </tr>
+
+
+                <tr>
+                    <td><button onclick="addChar(document.getElementById('screen'), 7)">7</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), 8)">8</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), 9)">9</button></td>
+                    <td><button class="spec_key" onclick="delt(document.getElementById('screen'),document.getElementById('screen_out'))">DEL</button></td>
+                    <td><button class="spec_key" onclick="get_rid(document.getElementById('screen'),document.getElementById('screen_out'))">AC</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="addChar(document.getElementById('screen'), 4)">4</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), 5)">5</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), 6)">6</button ></td>
+                <td><button onclick="addChar(document.getElementById('screen'),' *')">*</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), '/')">/</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="addChar(document.getElementById('screen'), 1)">1</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), 2)">2</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), 3)">3</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), '+')">+</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), '-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="addChar(document.getElementById('screen'), 0)">0</button></td>
+                    <td><button onclick="addChar(document.getElementById('screen'), '.')">.</button></td>
+                    <td><button onclick="expo(document.getElementById('screen'),document.getElementById('screen_out'))">EXP</button></td>
+                    <td><button onclick="sto(document.getElementById('screen_out'),document.getElementById('screen'))">Ans</button></td>
+                    <td><button onclick="calculate(document.getElementById('screen'),document.getElementById('screen_out'))">=</button></td>
+
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+        <footer>
+            <p> Bernard "vayne" Obinna</p>
+            <p> copyright &copy; 2017 </p>
+            <p> 130805048 </p>
+        </footer>
+
+
+    </div>
+
+    <script type="text/javascript" src="../javascript/script.js">
+    </script>
+
+</body>
+
+</html>
